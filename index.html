@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background: #0a0a0a; color: #fff; }
+
+        /* NAVBAR */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.9); padding: 16px 40px; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+        nav .logo { font-size: 22px; font-weight: bold; color: #6c63ff; }
+        nav a { color: #ccc; text-decoration: none; margin-left: 24px; font-size: 15px; }
+        nav a:hover { color: #6c63ff; }
+
+        /* HERO */
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(135deg, #0a0a0a, #1a1a2e); }
+        .hero h1 { font-size: 52px; margin-bottom: 16px; }
+        .hero h1 span { color: #6c63ff; }
+        .hero p { font-size: 20px; color: #aaa; margin-bottom: 30px; }
+        .hero .btn { padding: 14px 32px; background: #6c63ff; color: white; border-radius: 30px; text-decoration: none; font-size: 16px; }
+        .hero .btn:hover { background: #574fd6; }
+
+        /* SECTIONS */
+        section { padding: 80px 10%; }
+        section h2 { font-size: 36px; margin-bottom: 40px; text-align: center; }
+        section h2 span { color: #6c63ff; }
+
+        /* ABOUT */
+        .about-content { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+        .about-content img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 4px solid #6c63ff; }
+        .about-text { flex: 1; min-width: 280px; }
+        .about-text p { color: #ccc; line-height: 1.8; font-size: 16px; margin-bottom: 12px; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+        .skill-tag { background: #6c63ff22; border: 1px solid #6c63ff; padding: 6px 16px; border-radius: 20px; font-size: 14px; color: #6c63ff; }
+
+        /* CARDS */
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .card { background: #1a1a2e; border-radius: 12px; padding: 24px; border: 1px solid #2a2a4a; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-6px); border-color: #6c63ff; }
+        .card h3 { font-size: 18px; margin-bottom: 10px; color: #fff; }
+        .card p { color: #aaa; font-size: 14px; line-height: 1.6; }
+        .card .tag { display: inline-block; margin-top: 12px; padding: 4px 12px; background: #6c63ff33; color: #6c63ff; border-radius: 20px; font-size: 12px; }
+        .card .date { font-size: 12px; color: #666; margin-top: 8px; }
+
+        /* CERTIFICATES */
+        .cert-card { background: #1a1a2e; border-radius: 12px; padding: 24px; border-left: 4px solid #6c63ff; }
+        .cert-card h3 { font-size: 17px; margin-bottom: 6px; }
+        .cert-card p { color: #aaa; font-size: 14px; }
+        .cert-card .issued { font-size: 12px; color: #6c63ff; margin-top: 8px; }
+
+        /* CONTACT */
+        #contact { background: #1a1a2e; text-align: center; }
+        #contact p { color: #aaa; font-size: 16px; margin-bottom: 20px; }
+        .contact-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .contact-links a { padding: 12px 28px; border: 1px solid #6c63ff; color: #6c63ff; border-radius: 30px; text-decoration: none; font-size: 15px; }
+        .contact-links a:hover { background: #6c63ff; color: white; }
+
+        /* FOOTER */
+        footer { text-align: center; padding: 24px; color: #555; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">SHAIK KARIMULLA</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#Education">Education</a>
+        <a href="#internships">Internships</a>
+        <a href="#projects">Projects</a>
+        <a href="#Certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1> Haii , I'm <span>Shaik Karimulla....!!!</span> 👋</h1>
+        <p>Aspiring Python Developer | SQL | Backend Basics | Junior Software Engineer | Open to Work</p>
+        <a href="#about" class="btn">View My Work</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About <span>Me</span></h2>
+    <div class="about-content">
+        <img src="c:\Users\Lenovo\Downloads\Profile Photo.jpeg" alt="Profile Photo" onerror="this.style.display='none'">
+        <div class="about-text">
+            <p>Computer Science graduate skilled in Python and SQL with strong problem-solving abilities. 
+Experienced in designing databases, writing optimized queries, and developing clean, efficient code. 
+Passionate about continuous learning and building real-world software solutions.</p>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Data Structures & Algorithms</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Database Design</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Query Optimization</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Git & Github</span>
+                <span class="skill-tag">Jupyter Notebook</span>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- EDUCATION -->
+<section id="Education" style="padding: 80px 10%; background:#0a0a0a;">
+    <h2 style="font-size:36px; text-align:center; margin-bottom:50px; color:white;">My <span style="color:#6c63ff;">Education</span></h2>
+
+    <style>
+        .flip-card { background:transparent; width:100%; height:220px; perspective:1000px; cursor:pointer; }
+        .flip-inner { position:relative; width:100%; height:100%; transition:transform 0.7s; transform-style:preserve-3d; }
+        .flip-card:hover .flip-inner { transform:rotateY(180deg); }
+        .flip-front, .flip-back { position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; padding:24px; display:flex; flex-direction:column; justify-content:center; }
+        .flip-front { background:#1a1a2e; border:1px solid #2a2a4a; }
+        .flip-back { background:#6c63ff; transform:rotateY(180deg); }
+    </style>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px;">
+
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div style="font-size:40px;">🎓</div>
+                    <h3 style="color:white; margin-top:12px;">B.Tech - CSE</h3>
+                    <p style="color:#aaa; font-size:14px;">Chalapathi Institute of  Engineering And Technology</p>
+                    <p style="color:#6c63ff; font-size:13px;">Hover to see more →</p>
+                </div>
+                <div class="flip-back">
+                    <h3 style="color:white;">B.Tech Computer Science</h3>
+                    <p style="color:white; margin-top:8px;">📅 2021 – 2025</p>
+                    <p style="color:white;">📍 GUNTUR</p>
+                    <p style="color:white;">⭐ CGPA: 7.8 / 10</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div style="font-size:40px;">📚</div>
+                    <h3 style="color:white; margin-top:12px;">Intermediate - MPC</h3>
+                    <p style="color:#aaa; font-size:14px;">PBN Junior College</p>
+                    <p style="color:#6c63ff; font-size:13px;">Hover to see more →</p>
+                </div>
+                <div class="flip-back">
+                    <h3 style="color:white;">Intermediate MPC</h3>
+                    <p style="color:white; margin-top:8px;">📅 2019 – 2021</p>
+                    <p style="color:white;">📍 NIDUBROLU</p>
+                    <p style="color:white;">⭐ Percentage: 83%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <div style="font-size:40px;">🏫</div>
+                    <h3 style="color:white; margin-top:12px;">SSC - 10th Grade</h3>
+                    <p style="color:#aaa; font-size:14px;">ZPHS High School</p>
+                    <p style="color:#6c63ff; font-size:13px;">Hover to see more →</p>
+                </div>
+                <div class="flip-back">
+                    <h3 style="color:white;">SSC 10th Grade</h3>
+                    <p style="color:white; margin-top:8px;">📅 2018 – 2019</p>
+                    <p style="color:white;">📍 PT PARRU</p>
+                    <p style="color:white;">⭐ Percentage: 88%</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- INTERNSHIPS -->
+<section id="internships">
+    <h2>My <span>Internships</span></h2>
+    <div class="cards">
+        <div class="card">
+            <h3>AI-ML Virtual Internship...</h3>
+            <p>Completed an AI/ML internship involving data cleaning, feature engineering, model training, and evaluation using Python, NumPy, Pandas, Scikit-learn, and basic deep learning concepts.</p>
+            <span class="tag">Python</span>
+            <div class="date">📅 Jan 2024 – Apr 2024 |  Google for Developers</div>
+        </div>
+        <div class="card">
+            <h3>APSSDC Game Design Internship</h3>
+            <p> I successfully completed a Game Design Internship conducted by Andhra Pradesh State Skill Development Corporation (APSSDC), where I learned game development using Buildbox.</p>
+            <span class="tag">2D Game Design</span>
+            <div class="date">📅 May 2024 – Sep 2024 | APSSDC Corp</div>
+        </div>
+        <div class="card">
+            <h3>Android Developer Virtual Internship</h3>
+            <p>Completed Android Developer Virtual Internship by AICTE in collaboration with Google. Gained hands-on experience in Android Studio, UI/UX design, activity lifecycle, API integration, and mobile application development.</p>
+            <span class="tag"> Google for Developers</span>
+            <div class="date">📅 Dec 2024 – Mar 2025 |  Google for Developers</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="background: #0d0d1a;">
+    <h2>My <span>Projects</span></h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🤖 - Disney + Hotstar Data Analysis :</h3>
+            <p>Analyzed infrastructure usage data using python, Studied AWS-based scalable cloud architecture. Performed data cleaning and basic analysis for insights.</p>
+            <span class="tag">Python + Pandas + Numpy</span>
+        </div>
+        <div class="card">
+            <h3>🗄️ - Digital Agricultural Stewardship System :</h3>
+            <p>Built a system to display agricultural product and market price data , Implemented data – based fertilizerandpesticide recommendations. Used MySQL for storing and retrieving agricultural data.</p>
+            <span class="tag">Visual Studio + CSharp + .NET Framework + MySQL</span>
+        </div>
+        <div class="card">
+            <h3>🌐 Portfolio Website</h3>
+            <p>This portfolio! Built with Python , HTML/CSS. Fully responsive with sections for projects, internships, and certificates.</p>
+            <span class="tag"> Python + HTML</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- CERTIFICATES - TIMELINE -->
+<section id="Certificates" style="background: #0d0d1a; padding: 80px 10%;">
+    <h2 style="font-size:36px; text-align:center; margin-bottom:50px; color:white;">My <span style="color:#6c63ff;">Certificates</span></h2>
+
+    <div style="position:relative; max-width:800px; margin:0 auto;">
+        <!-- VERTICAL LINE -->
+        <div style="position:absolute; left:20px; top:0; bottom:0; width:3px; background:#6c63ff;"></div>
+
+        <!-- CERTIFICATE 1 -->
+        <div style="position:relative; margin-left:60px; margin-bottom:40px;">
+            <div style="position:absolute; left:-47px; top:10px; width:16px; height:16px; background:#6c63ff; border-radius:50%;"></div>
+            <div style="background:#1a1a2e; border-radius:12px; padding:24px; border:1px solid #2a2a4a;">
+                <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+                    <h3 style="color:white; font-size:18px;">🏆 Hands-on Training in Python</h3>
+                    <span style="background:#6c63ff33; color:#6c63ff; padding:4px 12px; border-radius:20px; font-size:12px;">IBM</span>
+                </div>
+                <p style="color:#6c63ff; font-size:13px; margin:8px 0;">📅 Issued: Jan 2024</p>
+                <p style="color:#aaa; font-size:14px; line-height:1.7;">Completed a comprehensive Python programming course covering data structures, functions, loops, file handling and object oriented programming.</p>
+                <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">Python</span>
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">Programming</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE 2 -->
+        <div style="position:relative; margin-left:60px; margin-bottom:40px;">
+            <div style="position:absolute; left:-47px; top:10px; width:16px; height:16px; background:#6c63ff; border-radius:50%;"></div>
+            <div style="background:#1a1a2e; border-radius:12px; padding:24px; border:1px solid #2a2a4a;">
+                <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+                    <h3 style="color:white; font-size:18px;">🏆 C# Fundamentals Microsoft</h3>
+                    <span style="background:#6c63ff33; color:#6c63ff; padding:4px 12px; border-radius:20px; font-size:12px;">Microsoft</span>
+                </div>
+                <p style="color:#6c63ff; font-size:13px; margin:8px 0;">📅 Issued: Mar 2024</p>
+                <p style="color:#aaa; font-size:14px; line-height:1.7;">Completed C# Fundamentals Certification from Microsoft, gaining knowledge in core C# programming, OOP concepts, control statements, exception handling, and basic .NET application development.</p>
+                <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">C#</span>
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">Database</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE 3 -->
+        <div style="position:relative; margin-left:60px; margin-bottom:40px;">
+            <div style="position:absolute; left:-47px; top:10px; width:16px; height:16px; background:#6c63ff; border-radius:50%;"></div>
+            <div style="background:#1a1a2e; border-radius:12px; padding:24px; border:1px solid #2a2a4a;">
+                <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+                    <h3 style="color:white; font-size:18px;">🏆 Fundamentals of Cybersecurity</h3>
+                    <span style="background:#6c63ff33; color:#6c63ff; padding:4px 12px; border-radius:20px; font-size:12px;">Cisco</span>
+                </div>
+                <p style="color:#6c63ff; font-size:13px; margin:8px 0;">📅 Issued: May 2024</p>
+                <p style="color:#aaa; font-size:14px; line-height:1.7;">Completed Fundamentals of Cybersecurity certification. Gained knowledge in network security, cyber threats, encryption, authentication methods, and data protection principles.</p>
+
+                <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">Docker</span>
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">Hackthon</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE 4 -->
+        <div style="position:relative; margin-left:60px; margin-bottom:40px;">
+            <div style="position:absolute; left:-47px; top:10px; width:16px; height:16px; background:#6c63ff; border-radius:50%;"></div>
+            <div style="background:#1a1a2e; border-radius:12px; padding:24px; border:1px solid #2a2a4a;">
+                <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+                    <h3 style="color:white; font-size:18px;">🏆 Cloud Foundation</h3>
+                    <span style="background:#6c63ff33; color:#6c63ff; padding:4px 12px; border-radius:20px; font-size:12px;">AWS-Platform</span>
+                </div>
+                <p style="color:#6c63ff; font-size:13px; margin:8px 0;">📅 Issued: Jul 2024</p>
+                <p style="color:#aaa; font-size:14px; line-height:1.7;">Completed Cloud Foundations Certification. Gained knowledge in cloud computing models (IaaS, PaaS, SaaS), virtualization, cloud security, networking basics, and cloud infrastructure management.</p>
+                <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">AWS</span>
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">Cloud Tech</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE 5 -->
+        <div style="position:relative; margin-left:60px;">
+            <div style="position:absolute; left:-47px; top:10px; width:16px; height:16px; background:#6c63ff; border-radius:50%;"></div>
+            <div style="background:#1a1a2e; border-radius:12px; padding:24px; border:1px solid #2a2a4a;">
+                <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+                    <h3 style="color:white; font-size:18px;">🏆 HTML & CSS Fundamentals</h3>
+                    <span style="background:#6c63ff33; color:#6c63ff; padding:4px 12px; border-radius:20px; font-size:12px;">freeCodeCamp</span>
+                </div>
+                <p style="color:#6c63ff; font-size:13px; margin:8px 0;">📅 Issued: Sep 2024</p>
+                <p style="color:#aaa; font-size:14px; line-height:1.7;">Completed front end web development course covering HTML5, CSS3, responsive design, flexbox and grid layout techniques.</p>
+                <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">HTML</span>
+                    <span style="background:#6c63ff22; color:#6c63ff; padding:4px 10px; border-radius:12px; font-size:12px;">CSS</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT - GLOWING STYLE -->
+<section id="contact" style="padding: 80px 10%; background:#0d0d1a; text-align:center;">
+    <h2 style="font-size:36px; margin-bottom:16px; color:white;">Get In <span style="color:#6c63ff;">Touch</span></h2>
+    <p style="color:#aaa; font-size:16px; max-width:500px; margin:0 auto 50px;">I'm currently open to new opportunities. Whether you have a question or just want to say hi — my inbox is always open!</p>
+
+    <a href="mailto:youremail@gmail.com"
+        style="display:inline-block; padding:16px 40px; background:transparent; color:#6c63ff; border:2px solid #6c63ff; border-radius:30px; font-size:18px; text-decoration:none; margin-bottom:50px; box-shadow: 0 0 20px #6c63ff55;"
+        onmouseover="this.style.background='#6c63ff'; this.style.color='white';"
+        onmouseout="this.style.background='transparent'; this.style.color='#6c63ff';">
+        📧 Shaik Hello!
+    </a>
+
+    <div style="display:flex; justify-content:center; gap:24px; flex-wrap:wrap;">
+        <a href="https://www.linkedin.com/in/shaik-karimulla145/" target="_blank"
+            style="padding:10px 24px; background:#1a1a2e; color:#aaa; border-radius:30px; text-decoration:none; border:1px solid #2a2a4a; font-size:14px;">
+            💼 LinkedIn
+        </a>
+        <a href="https://github.com/SHAIK145" target="_blank"
+            style="padding:10px 24px; background:#1a1a2e; color:#aaa; border-radius:30px; text-decoration:none; border:1px solid #2a2a4a; font-size:14px;">
+            🐙 GitHub
+        </a>
+        <a href="c:\Users\Lenovo\Desktop\Shaik_fresher_cv.pdf" download
+            style="padding:10px 24px; background:#1a1a2e; color:#aaa; border-radius:30px; text-decoration:none; border:1px solid #2a2a4a; font-size:14px;">
+            📄 Resume
+        </a>
+        <a href="tel:+91 9392962401"
+            style="padding:10px 24px; background:#1a1a2e; color:#aaa; border-radius:30px; text-decoration:none; border:1px solid #2a2a4a; font-size:14px;">
+            📱 Phone
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>Made with ❤️ by Shaik Karimulla | Python + SQL</p>
+</footer>
+
+</body>
+</html>
